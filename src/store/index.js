@@ -3,7 +3,7 @@ import { FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE } from "redux-persist
 import persistReducer from "redux-persist/es/persistReducer"
 import persistStore from "redux-persist/es/persistStore"
 import storage from 'redux-persist/lib/storage'
-import rootReducer from './RootReducer'
+import {rootReducer} from './RootReducer'
 
 
 const persistConfig={
