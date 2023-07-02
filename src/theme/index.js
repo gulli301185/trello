@@ -6,6 +6,18 @@ const Theme = ({children}) => {
     const theme=createTheme({
       components:{
         MuiButton,
+        MuiInputBase:{
+          styleOverrides:{
+            root:{
+              border:'1px solid',
+              padding:'0.5rem',
+              borderRadius:'3px',
+              '& .Mui-error':{
+                border:'1px solid red'
+              }
+            }
+          }
+        }
       }
     })
   return (
